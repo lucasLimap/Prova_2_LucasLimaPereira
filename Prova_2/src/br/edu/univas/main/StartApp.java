@@ -9,7 +9,7 @@ public class StartApp {
 	
 	public static void main(String[] args) {
 
-		Conta [] contas = new Conta [3];
+		Conta [] contas = new Conta [100];
 		
 		
 		do {
@@ -23,7 +23,7 @@ public class StartApp {
 			}else if (opcao == 3 ){
 				break;
 			}else {
-				System.out.printf("Opc„o Inv·lida!!\n");
+				System.out.printf("Opc√£o Inv√°lida!!\n");
 			}
 			
 			
@@ -39,7 +39,7 @@ public class StartApp {
 	}public static void cadastrarContas (Conta [] conta) {
 		for (int i = 0; i < conta.length; i++) {
 			Conta contas = new Conta ();
-			System.out.printf("DescriÁ„o:");
+			System.out.printf("Descri√ß√£o:");
 			contas.descricao = input.next();
 			System.out.printf("Data de Movimento:");
 			contas.dataMovimento = input.next();
@@ -55,7 +55,7 @@ public class StartApp {
 			if(conta != null) {
 				Conta contas = conta [i]; 
 				
-				System.out.printf("DescriÁ„o: %s Data de Movimento: %s\n"
+				System.out.printf("Descri√ß√£o: %s Data de Movimento: %s\n"
 								+ "Tipo: %s\n"
 								+ "Valor: %s\n\n",
 								contas.descricao, contas.dataMovimento, contas.tipo, contas.valor);
@@ -78,11 +78,11 @@ public class StartApp {
 		
 		float saldoTotal = totalReceita - totalDespesa;
 		if (saldoTotal < 0) {
-			System.out.printf("Seu saldo atual È: R$%.2f\n\n", saldoTotal);			
+			System.out.printf("Seu saldo atual √©: R$%.2f\n\n", saldoTotal);			
 		}else if (saldoTotal == 0) {
-			System.out.printf("Seu saldo atual È: R$%.2f\n\n", saldoTotal);
+			System.out.printf("Seu saldo atual √©: R$%.2f\n\n", saldoTotal);
 		}else if (saldoTotal > 0) {
-			System.out.printf("Seu saldo atual È: R$+%.2f\n\n", saldoTotal);
+			System.out.printf("Seu saldo atual √©: R$+%.2f\n\n", saldoTotal);
 		}
 		
 
